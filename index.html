@@ -34,20 +34,20 @@
   <!-- Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
-  <nav class="container">
-    <div id="icon"><img src="assets/images/icon.png" width="14" height="12" />
-      <ul>
-        <li><a href="signin.html">CASE STUDIES</a></li>
-        <li><a href="signup.html">ABOUT</a></li>
-        <li><a href="signin.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="container">
+      <div id="icon"><img src="assets/images/icon.png" width="14" height="12" />
+        <ul>
+          <li><a href="signin.html">CASE STUDIES</a></li>
+          <li><a href="signup.html">ABOUT</a></li>
+          <li><a href="signin.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
 </header>
 
 <header>
-  <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
 </header>
 
 <div class="menu">
@@ -72,21 +72,37 @@
           <h3 style="text-align: center;">UX/UI DESIGNER</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="four columns">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-      <div class="four columns">
-        <h4 style="text-align: center;">CASE STUDIES</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-      <div class="four columns">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+
+    <section class="case-studies" id="casestudies">
+            <h4 class="section-header">Case Studies</h4>
+            <a href="driftlist.html" class="case-list" id="landing-Capsule">
+                <div class="landing-case-logo">
+                    <img src="assets/images/Capsule.png" >
+                </div>
+                <h3 class="brand-name" id="drift-list"><span id="driftlist-bold">Capsule</h3>
+                <div class="case-specs">
+                    <h5>SaaS Collaboration Platform</h5><p>UX/UI Design, Branding, Front-End Development</p>
+                </div>
+            </a>
+            <a href="changeseed.html" class="case-list" id="landing-changeseed">
+                <div class="landing-case-logo">
+                    <img src="/images/changeseedlogo.svg">
+                </div>
+                <h3 class="brand-name" id="changeseed">Project</h3>
+                <div class="case-specs">
+                    <h5>Text</h5><p>Placeholder Text</p>
+                </div>
+            </a>
+            <a href="#1" class="case-list" id="landing-blocbox">
+                <div class="landing-case-logo">
+                    <img src="/images/blocboxlogo.svg">
+                </div>
+                <h3 class="brand-name" id="blocbox">Project</h3>
+                <div class="case-specs">
+                    <h5>Text</h5><p>Placeholder Text</p>
+                </div>
+            </a>
+        </section>
 
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/hamburger.js"></script>
