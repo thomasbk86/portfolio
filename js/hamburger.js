@@ -17,3 +17,8 @@ $(document).ready(function() {
   });
 
 });
+
+$(".navbar-inverse .navbar-nav > ul > li > a").click(function() {
+          $(".navbar-inverse .navbar-nav > ul > li > a").removeClass("active");
+          $(this).addClass("active");
+});
