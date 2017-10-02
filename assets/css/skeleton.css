@@ -324,13 +324,13 @@ a:hover {
     .case-studies .case-list {
       /*margin-top: 10px;*/
     }
-  }
+
   @media screen and (min-width: 769px) {
     .case-studies .case-list {
       margin: 0;
       width: 33%;
     }
-  }
+
   .case-studies .case-list#landing-Capsule img {
     display: block;
   }
