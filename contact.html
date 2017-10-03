@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta charset="utf-8">
+      <title>Thomas Kurth</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
 
-  <head>
+      <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Thomas Kurth</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+      <!-- FONT
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,700" rel="stylesheet" type="text/css">
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/dropit.css">
+      <link rel="stylesheet" href="assets/css/hover.css">
+      <link rel="stylesheet" href="assets/css/skeleton.css">
+      <link rel="stylesheet" href="assets/css/contact.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,500,700,800" rel="stylesheet" type="text/css">
+      <!-- Favicon
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Navigation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header>
-    <nav class="container">
-        <div class="navbar-inverse">
-          <div class="navbar-nav">
-          <ul>
-            <li><a href="file:///Users/thomaskurth/Desktop/skeleton-layout/index.html#">CASE STUDIES</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="file:///Users/thomaskurth/Desktop/skeleton-layout/contact.html">CONTACT</a></li>
-          </ul>
-          <div id="icon"><img src="assets/images/icon.png" width="14" height="12" />
-          </div>
-              <div class="three columns">
+        <!-- Navigation
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header>
+          <nav>
+            <div class="container">
+              <div class="row">
+                <div class="six columns">
+                  <img class="icon"src="assets/images/icon.png" width="14" height="12" />
                   <h6 class="smallname">THOMAS KURTH</h6>
-              </div>
-            </div>
-        </div>
+                  </div>
+                </div><!--/.column-->
+                  <div class="six columns">
+                      <div class="navbar-inverse">
+                        <div class="navbar-nav">
+                        <ul>
+                            <li><a href="index.html">CASE STUDIES</a></li>
+                            <li><a href="index.html#aboutme">ABOUT</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!--/.column-->
+                </div><!--/.row-->
+              </div><!--/.container-->
+          </nav>
+      </header>
+
+      <header>
+          <button class="hamburger">&#9776;</button>
+          <button class="cross">&#735;</button>
+      </header>
+
+      <div class="menu">
+        <ul>
+          <a href="#"><li>CASE STUDIES</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="contact.html"><li>CONTACT</li></a>
+        </ul>
       </div>
-    </nav>
-  </header>
-
-  <header>
-    <button class="hamburger">&#9776;</button>
-    <button class="cross">&#735;</button>
-  </header>
-
-  <div class="menu">
-  <ul>
-    <a href="#"><li>CASE STUDIES</li></a>
-    <a href="#"><li>ABOUT</li></a>
-    <a href="file:///Users/thomaskurth/Desktop/skeleton-layout/contact.html"><li>CONTACT</li></a>
-  </ul>
-  </div>
 
   <!-- Contact
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="docs-section" id="forms">
-      <h6 class="docs-header">GET IN TOUCH</h6>
+      <h1 class="docs-header">GET IN TOUCH</h1>
       <h3 class="subhead">Let's talk about your project.</h3>
       <div class="docs-example docs-example-forms">
         <form>
@@ -82,11 +90,11 @@
             </div>
             <div class="four columns">
               <label for="exampleEmailInput">Your Email</label>
-              <input class="u-full-width" type="email" placeholder="test@mailbox.com..." id="exampleEmailInput">
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
             </div>
             <div class="four columns">
               <label for="exampleEmailInput">Your Phone Number</label>
-              <input class="u-full-width" type="email" placeholder="(555-123-4444)..." id="exampleEmailInput">
+              <input class="u-full-width" type="email" placeholder="(555-123-4444)" id="exampleEmailInput">
             </div>
           </div>
           <label for="exampleMessage">Message</label>
@@ -98,9 +106,9 @@
           <input class="button-primary" type="submit" value="Submit">
         </form>
       </div>
+    </div>
+  </div>
 
-      <div class="row">
-          <div class="twelve columns">
                 <div class="border">
                            <ul>
                                <li><a href="#" target="_blank"><i class="fa fa-envelope fa-lg"></i></a></li>
@@ -115,15 +123,22 @@
         <div class="row">
             <div class="twelve columns">
               <footer>
-              <div id="iconfooter"><img src="assets/images/icon.png" width="14" height="12" />
-              <h6 class="smallnamefooter">THOMAS KURTH</h6>
-                  <div class="copyright-info">
-                    <p>&copy 2017 Thomas Kurth | Designed &amp Developed by Thomas Kurth</p>
-                    </div>
-                  </div>
-            </footer>
-          </div>
-        </div>
+              </footer>
+            </div><!--/.column-->
+          </div><!--/.row-->
+          <div class="container">
+                  <div class="row">
+                      <div class="six columns">
+                        <img src="assets/images/icon.png" width="14" height="12" />
+                            <h6 class="smallnamefooter">THOMAS KURTH</h6>
+                            </div><!--/.column-->
+                                <div class="six columns">
+                        <div class="copyright-info">
+                            <p>&copy 2017 Thomas Kurth | Designed &amp Developed by Thomas Kurth</p>
+                        </div>
+                      </div><!--/.column-->
+                  </div><!--/.row-->
+                </div><!--/.container-->
 
         <script src="assets/js/jquery-3.2.1.min.js"></script>
         <script src="assets/js/hamburger.js"></script>
