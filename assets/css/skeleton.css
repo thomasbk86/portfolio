@@ -132,7 +132,27 @@ body {
   font-weight: 200;
   font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
-  background-color: #EAE7DC; }
+  background-color: #EAE7DC;
+ }
+
+  /* Background
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  /*img.bg {*/
+    /* Set rules to fill background */
+    /*min-height: 100%;
+    min-width: 1024px;*/
+
+    /* Set up proportionate scaling */
+    /*width: 100%;
+    height: auto;*/
+
+    /* Set up positioning */
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .16;
+  }*/
 
   /* Hamburger Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -283,6 +303,9 @@ a:hover {
   color: #333;
 }
 
+.about-me :focus {
+  outline: none;
+}
 
 #profile img[src="assets/images/profile.jpg"] {
   border:3px;
@@ -363,7 +386,7 @@ footer {
   }
 
   .copyright-info p {
-    font-size: .8em;
+    font-size: .7em;
     margin-top: 2px;
     margin-left: 40px;
   }
@@ -607,24 +630,34 @@ there.
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .overlay h4 {
+    font-size: 4rem;
+    padding-top: 15px;
+  }
+
+  .overlay h5 {
+    font-size: 1.7rem;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
+  }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
 @media (max-width: 900px) {
   .overlay h4 {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
+    padding-top: 15px;
   }
-}
 
-@media (max-width: 900px) {
   .overlay h5 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
-}
 
-@media (max-width: 900px) {
   .overlay p {
     font-size: .08rem;
   }
@@ -633,35 +666,57 @@ there.
 @media (max-width: 700px) {
   .overlay h4 {
     font-size: 2rem;
+    padding-top: 5px;
   }
-}
 
-@media (max-width: 700px) {
   .overlay h5 {
     font-size: 1.1rem;
   }
-}
 
-@media (max-width: 700px) {
   .overlay p {
     font-size: .06rem;
+  }
+
+.contact li {
+  display: block;
+  padding-left: 35px;
   }
 }
 
 @media (max-width: 550px) {
   .overlay h4 {
     font-size: 5rem;
+    padding-top: 50px;
   }
-}
 
-@media (max-width: 550px) {
   .overlay h5 {
     font-size: 3.2rem;
   }
-}
 
-@media (max-width: 550px) {
   .overlay p {
     font-size: 1.7rem;
+  }
+
+  .footericon {
+    padding-top: 3px;
+    display: block;
+    margin: auto;
+  }
+
+  .copyright-info p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: block;
+    margin: auto;
+    font-size: .6rem;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
   }
 }

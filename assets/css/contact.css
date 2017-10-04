@@ -208,3 +208,26 @@ label > .label-body {
     content: "";
     display: table;
     clear: both; }
+
+    @media (max-width: 700px) {
+    .border li {
+      display: block;
+      padding-left: 35px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .footericon {
+        padding-top: 3px;
+        display: block;
+        margin: auto;
+      }
+
+      .copyright-info p {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        display: block;
+        margin: auto;
+        font-size: .6rem;
+      }
+    }
